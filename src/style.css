@@ -1,0 +1,170 @@
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    --main-gradient: -webkit-linear-gradient(#f34949, #ff8100);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url("./icon.png");
+    font-family: var(--main-font);
+}
+
+/* title-ok */
+
+.title {
+    flex-basis: 10%;
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 80px;
+    background: var(--main-gradient);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #D48D36;
+}
+
+/* planets */
+
+.content {
+    flex-basis: 80%;
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content .planets {
+    flex-basis: 60%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.planets .planet {
+    height: 30%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 25px;
+    background-color: rgba(200,200,200,.9);
+}
+
+.planet h3 {
+    font-size: 30px;
+}
+
+.planet .planet-container {
+    height: 70%;
+    width: 70%;
+}
+
+/* jedis */
+
+.chosen {
+    width: 400px;
+    background-color: rgba(200,200,200,.9);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jedi {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jedi p {
+    padding-right: 20px;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.chosen button {
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    border: transparent;
+    border-radius: 25px;
+    background-color: #ff8100;
+    cursor: pointer;
+}
+
+.chosen button:hover {
+    background-color: #f7ac6b;
+}
+
+/* choosing planets */
+
+.jedis .choose-planet {
+    flex-basis: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.choose-planet .add-planet {
+    flex-basis: 30%;
+    background-color: rgba(200,200,200,.9);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-planet .picked {
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+
+.displayChooseJedi {
+    visibility: hidden;
+}
+
+/* plus button  */
+
+.plus {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .3);
+    cursor: pointer;
+}
+
+.plus:hover {
+    background-color: rgba(255, 255, 255, .6);
+} 
+
+.plus i {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
