@@ -10,10 +10,6 @@
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     min-height: 100vh;
     width: 100vw;
     background-image: url("./icon.png");
@@ -21,12 +17,8 @@ main {
 }
 
 /* title-ok */
-
-.title {
-    flex-basis: 10%;
-}
-
 .title h1 {
+    padding: 40px 0;
     text-align: center;
     font-size: 80px;
     background: var(--main-gradient);
@@ -39,42 +31,29 @@ main {
 /* planets */
 
 .content {
-    flex-basis: 80%;
-    width: 80vw;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
 }
 
-.content .planets {
-    flex-basis: 60%;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.planets .planet {
-    height: 30%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+.planet {
+    min-height: 120px;
+    width: 300px;
+    margin: 0 40px 40px 0;
     border-radius: 25px;
     background-color: rgba(200,200,200,.9);
 }
 
 .planet h3 {
     font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
 }
 
-.planet .planet-container {
-    height: 70%;
-    width: 70%;
-}
+.planet-container {
+    padding-bottom: 20px;
+    margin: 20px 40px;
 
+}
 /* jedis */
 
 .chosen {

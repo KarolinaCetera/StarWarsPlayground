@@ -1,6 +1,6 @@
 import './style.css';
 
-const defaultJediText = 'Some Jedi';
+const defaultJediText = 'Choose Warrior';
 
 // paragraphs in planets
 
@@ -37,7 +37,7 @@ const jediChoose = () => {
         jediDisplay.innerText = knight;
     })
     .catch(error => {
-        vehicleDisplay.innerText = `Error, try again!`;
+        jediDisplay.innerText = `Error, try again!`;
     })
 }
 
