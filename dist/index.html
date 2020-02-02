@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap&subset=latin-ext" rel="stylesheet">
+    <title>Jedi Picker</title>
+</head>
+<body>
+    <main>
+        <div class="title">
+            <h1>In the Galaxy far far away...</h1>
+        </div>
+
+        <div class="content">
+
+            <div class="planets">
+                <div class="planet tatooine">
+                    <h3>Tatooine</h3>
+                    <div class="planet-container">
+                        <p id="js-tatooine" class="elements"></p>
+                    </div>
+                </div>
+                
+                <div class="planet alderaan">
+                    <h3>Alderaan</h3>
+                    <div class="planet-container">
+                        <p id="js-alderaan" class="elements"></p>
+                    </div>
+                </div>
+
+                <div class="planet naboo">   
+                    <h3>Naboo</h3>
+                    <div class="planet-container">
+                        <p id="js-naboo" class="elements"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="jedis">
+
+                <div class="chosen" >
+                    <div class="jedi">
+                        <p id="js-jediDisplay">Choose warrior</p>
+                        <div id="js-jediPlus" class="plus">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                    <button id="js-jediButton">Warrior</button>
+                </div>
+
+                <div id="js-choosePlanet" class="choose-planet displayChooseJedi">
+                    <div class="add-planet">
+                        <div id="js-addTatooine" class="plus">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <p class="picked">Tatooine</p>
+                    </div>
+
+                    <div class="add-planet">
+                        <div id="js-addAlderaan" class="plus">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <p class="picked">Alderaan</p>
+                    </div>
+
+                    <div class="add-planet">
+                        <div id="js-addNaboo" class="plus">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <p class="picked">Naboo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/0b7d141920.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
